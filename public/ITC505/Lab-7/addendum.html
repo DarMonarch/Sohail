@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addendum Page</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><b><u>Addendum for Server.js</u></b></h1> <br>
+    <p>This page provides an overview of the key elements used in the `server.js` file for your web application.</p>
+
+    <h4><b><u>Key Components in Server.js</u></b></h4>
+    <p>The main components used in `server.js` are: <br><br>
+        <b>require()</b> - Used to include modules and dependencies in the application. <br>
+        <b>express()</b> - Creates an instance of an Express application for handling HTTP requests and responses. <br>
+        <b>app.get()</b> - Defines routes for handling GET requests. <br>
+        <b>app.listen()</b> - Starts the server and listens for incoming requests on a specified port. <br>
+        <b>body-parser</b> - Middleware for parsing incoming request bodies in a middleware before your handlers, available under the req.body property. <br>
+        <b>cors</b> - Middleware for enabling Cross-Origin Resource Sharing, allowing your server to accept requests from different origins. <br>
+    </p>
+
+    <h1>Discussion of Choices</h1>
+
+    <h4>Middleware Choices</h4>
+    <p>Used body-parser for easier data handling from client requests and CORS for handling cross-origin requests.</p>
+
+    <h4>Routing Strategy</h4>
+    <p>Implemented simple routing with app.get() for the home page and article page, enabling easy navigation.</p>
+
+    <h4>Error Handling</h4>
+    <p>Basic error handling is included to manage 404 errors and server issues gracefully.</p>
+
+    <h4>Port Configuration</h4>
+    <p>Set to listen on port 3000, which is a common choice for development environments.</p>
+
+    <h4>Logging Choices</h4>
+    <p>Using console.log for debugging purposes to track request handling and server status.</p>
+
+    <footer>
+        <p style="text-align: center;"><b>Last updated:</b> 
+            <span id="foot_tag"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+        var i = document.lastModified;
+        document.getElementById('foot_tag').textContent = i;
+    </script>
+    
+</body>
+</html>
