@@ -53,6 +53,6 @@ app.get('/fill', (req, res) => {
     });
 });
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+app.listen(port, 'sohailmadlib.azurewebsites.net',() => {
+    console.log(`Server running at http://sohailmadlib.azurewebsites.net:${port}`);
 });
